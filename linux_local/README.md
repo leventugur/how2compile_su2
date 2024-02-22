@@ -49,6 +49,15 @@ NOTE: In this setup settings example, one additional flag *-Denable-autodiff=tru
 ./ninja -C build install
 ```
 
+9. Test installation
+
+```
+mpiexec ./bin/SU2_CFD
+```
+
+This command should return an error such as **"The configuration file (.cfg) is missing!!"** and then MPI should abort. This is the expected behviour. Then a test case can be run with a config file.
+
+
 
 
    
