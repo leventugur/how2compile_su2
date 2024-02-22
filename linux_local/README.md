@@ -40,13 +40,13 @@ cd <foldername>
 ./meson.py build --prefix=$PWD -Denable-autodiff=true
 ```
 
-NOTE: In this setup settings example, one additional flag *-Denable-autodiff=true* are set to activate parallel computing and adjoint optimization features of the code. For other flags and detailed info, see: https://su2code.github.io/docs_v7/Build-SU2-Linux-MacOS/
+NOTE: In this setup settings example, one additional flag *-Denable-autodiff=true* are set to activate adjoint optimization features of the code. For other flags and detailed info, see: https://su2code.github.io/docs_v7/Build-SU2-Linux-MacOS/
 
 
 8. Install via ninja
 
 ```
- ./ninja -C build install
+./ninja -C build install
 ```
 
 
