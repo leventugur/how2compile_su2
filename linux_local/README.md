@@ -54,13 +54,22 @@ cd <foldername>
 NOTE: In this setup settings example, one additional flag *-Denable-autodiff=true* are set to activate adjoint optimization features of the code. For other flags and detailed info, see: https://su2code.github.io/docs_v7/Build-SU2-Linux-MacOS/
 
 
-8. Install via ninja
+8. Export variables 
+
+```
+export SU2_RUN=/home/be23361/Desktop/SU2/SU2/bin
+export SU2_HOME=/home/be23361/Desktop/SU2/SU2
+export PATH=$PATH:$SU2_RUN
+export PYTHONPATH=$PYTHONPATH:$SU2_RUN
+```
+
+9. Install via ninja
 
 ```
 ./ninja -C build install
 ```
 
-9. Test installation
+10. Test installation
 
 ```
 mpiexec ./bin/SU2_CFD
