@@ -25,12 +25,12 @@ conda env create -f environment.yml
 conda activate mpi4py
 ```
 
-#4. Install mpi4py library
-#
-#```
-#pip install --upgrade pip
-#pip install mpi4py
-#```
+%4. Install mpi4py library
+%
+%```
+%pip install --upgrade pip
+%pip install mpi4py
+%```
 
 5. Clone a version of SU2. For the latest develop version:
 
