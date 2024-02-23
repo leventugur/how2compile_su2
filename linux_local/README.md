@@ -1,13 +1,6 @@
 # Compiling SU2 on Local Linux
 
-1. Install MPI package if it is not available in the system:
-
-```
-sudo apt update
-sudo apt-get install libopenmpi-dev
-```
-
-2. Install conda/miniconda if it is not installed yet
+1. Install conda/miniconda if it is not installed yet
 
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -16,13 +9,11 @@ source ~/.bashrc
 conda update conda
 ```
 
-3. Set a conda environment
-
-Find **environement.yml** file in the repo and download it. The path of the downloaded file is not important. Run the below commands to set the environment.
+2. Install MPI package if it is not available in the system:
 
 ```
-conda env create -f environment.yml
-conda activate mpi4py
+sudo apt update
+sudo apt-get install libopenmpi-dev
 ```
 
 4. Clone a version of SU2. For the latest develop version:
