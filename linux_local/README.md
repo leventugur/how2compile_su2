@@ -57,8 +57,8 @@ NOTE: In this setup settings example, one additional flag *-Denable-autodiff=tru
 8. Export variables 
 
 ```
-export SU2_RUN=/home/be23361/Desktop/SU2/SU2/bin
-export SU2_HOME=/home/be23361/Desktop/SU2/SU2
+export SU2_RUN=<path_to_su2/bin>   eg: /home/be23361/Desktop/SU2/SU2/bin
+export SU2_HOME=<path_to_su2>      eg: /home/be23361/Desktop/SU2/SU2
 export PATH=$PATH:$SU2_RUN
 export PYTHONPATH=$PYTHONPATH:$SU2_RUN
 ```
