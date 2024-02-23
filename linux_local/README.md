@@ -3,7 +3,8 @@
 1. Install MPI package if it is not available in the system:
 
 ```
-sudo apt install libopenmpi-dev
+sudo apt update
+sudo apt-get install libopenmpi-dev
 ```
 
 2. Install conda/miniconda if it is not installed yet
