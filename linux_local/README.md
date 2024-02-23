@@ -3,7 +3,7 @@
 1. Install MPI package if it is not available in the system:
 
 ```
-sudo apt-get install libcr-dev
+sudo apt install libopenmpi-dev
 ```
 
 2. Install conda/miniconda if it is not installed yet
@@ -13,6 +13,15 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 source ~/.bashrc
 conda update conda
+```
+
+3. Set a conda environment
+
+Find **environement.yml** file in the repo and download it. The path of the downloaded file is not important. Run the below commands to set the environment.
+
+```
+conda env create -f environment.yml
+conda activate mpi4py
 ```
 
 4. Install mpi4py library
@@ -27,6 +36,8 @@ pip install mpi4py
 ```
 git clone -b develop https://github.com/su2code/SU2.git <foldername_to_copy>
 ```
+
+NOTE: If there is another SU2 folder built by meson and would like to be deleted, use: "rm -rf <su2_foldername>"
 
 6. Descend into the SU2 directory:
    
